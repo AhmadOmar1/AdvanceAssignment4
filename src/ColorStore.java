@@ -13,8 +13,8 @@ public class ColorStore {
         colors.put("Red", red);
         colors.put("Green",  Color.createColor(0,255,0));
         colors.put("Blue",  Color.createColor(0,0,255));
-        colors.put("White",  Color.createColor(0,0,0));
-        colors.put("Black",  Color.createColor(255,255,255));
+        colors.put("White",  Color.createColor(255,255,255));
+        colors.put("Black",  Color.createColor(0,0,0));
     }
 
     public static Color getCopy(String color){

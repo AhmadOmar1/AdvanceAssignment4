@@ -7,14 +7,16 @@ public class Color implements Cloneable{
 
 
     private Color(int red, int green, int blue) {
-        this.red = Validation.isValidRGB(red);
-        this.green = Validation.isValidRGB(green);
-        this.blue = Validation.isValidRGB(blue);
+        this.red =red;
+        this.green = green;
+        this.blue = blue;
 
     }
 
     public static Color createColor(int red, int green, int blue) {
-        String col = RGBtoString(red, blue, green);
+        String col = String.valueOf(RGBtoString(red, blue, green));
+
+
         if (ColorStore.colors.containsValue(col)) {
         return (Color) ColorStore.colors.clone();
         }
@@ -26,8 +28,9 @@ public class Color implements Cloneable{
         System.out.println("I am scanning Color class");
     }
 
-    public static String RGBtoString(int red, int blue , int green) {
-   return (red+","+green+","+blue);
+    public static Color RGBtoString(int red, int blue , int green) {
+
+  return new Color(red,green,blue);
     }
 
     public int getRed() {return red;}

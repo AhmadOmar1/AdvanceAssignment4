@@ -50,7 +50,8 @@ public class App {
                   break;
 
           }
-        Color color = Color.createColor(255,0,0);
+    //    Color color = Color.createColor(255,0,0);
+    //    Color color = Color.createColor(255,0,0);
         //Color green =  Color.createColor(0,255,0);
 
 
