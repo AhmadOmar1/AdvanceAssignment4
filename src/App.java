@@ -1,11 +1,5 @@
 import java.util.Scanner;
-
-
-
-
 public class App {
-
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
            int red;
@@ -17,7 +11,6 @@ public class App {
         while(flag){
           PrintMenu.menu();
            check = sc.nextInt();
-
           switch(check){
               case 1:
               {
@@ -36,7 +29,7 @@ public class App {
                   red = sc.nextInt();
                   green = sc.nextInt();
                   blue = sc.nextInt();
-                  System.out.println(ColorDefaultCheck.check(Color.createColor(red,green,blue)));
+                  System.out.println(ColorDefaultCheck.check(Color.createRGB(red,green,blue)));
                   break;
               }
               case 3:
@@ -48,18 +41,8 @@ public class App {
                   System.exit(1);
                   flag = false;
                   break;
-
           }
-    //    Color color = Color.createColor(255,0,0);
-    //    Color color = Color.createColor(255,0,0);
-        //Color green =  Color.createColor(0,255,0);
-
-
-
-
-
       //  System.out.println("not found");
-
     }
     }
 }
